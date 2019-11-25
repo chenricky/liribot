@@ -13,8 +13,12 @@ console.log ("query URL is: " + bandInTown_baseURL);
 if (operator === "concert-this") {
 axios.get(bandInTown_baseURL).then(
   function(response) {
-    // Then we print out the imdbRating
-    console.log(response);
+    // Then we print out 
+    console.log("total venues are " + response.data.length);
+    //console.log(response.data[0].venue);
+  for (var i=0; i < response.data.length; i++) {
+    console.log ("venue " + (i+1) + " is " + response.data[i].venue.name + " at the time of " + response.data[i].datetime);
+  }
   }
 )};
 
