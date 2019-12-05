@@ -23,7 +23,7 @@ axios.get(bandInTown_baseURL).then(
 )};
 
 
-var song = process.argv.slice(3).join("%20");
+var song = process.argv.slice(3).join(" ");
 
 
 if (operator === "spotify-this-song") {
