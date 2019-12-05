@@ -33,7 +33,7 @@ if (operator === "spotify-this-song") {
       return console.log('Error occurred: ' + err);
     }
    
-  console.log(data); 
+  console.log("the artist of the song " + song + " is " + data.tracks.items[0].artists[0].name); 
   });
 };
 
