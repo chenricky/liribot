@@ -8,3 +8,6 @@
 
 # spotify search for the name of the song more than one word
 ![spotify-this-song](./spotify-this-song-2.PNG)
+
+# Movie search 
+![movie-this](./movie-this.PNG)
