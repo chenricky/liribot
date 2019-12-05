@@ -32,7 +32,8 @@ if (operator === "spotify-this-song") {
     if (err) {
       return console.log('Error occurred: ' + err);
     }
-   
+  console.log("the name of the song is " + song);  
+  console.log("the name of the album is "+ data.tracks.items[0].album.name);
   console.log("the artist of the song " + song + " is " + data.tracks.items[0].artists[0].name); 
   });
 };
